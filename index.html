@@ -1,0 +1,2044 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>10 Thunder Road — Sedona, AZ | Posterity 44</title>
+  <meta name="description" content="6,200 SF luxury estate at Canyon Mesa Country Club. 4 bedrooms, 7-car garage, 21kW solar, heated pool & spa. Views of Sedona's iconic red rocks. $3,495,000.">
+  <meta property="og:title" content="10 Thunder Road — Sedona, AZ | Posterity 44">
+  <meta property="og:description" content="A once-in-a-generation offering at Canyon Mesa Country Club. Fully reimagined in 2017. $3,495,000.">
+  <meta property="og:image" content="./assets/gallery/photo_00.jpg">
+  <meta property="og:type" content="website">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500;1,600&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500&display=swap" rel="stylesheet">
+  <link rel="preload" as="image" href="./assets/gallery/photo_00.jpg">
+  <style>
+    /* ============================================================
+       CSS VARIABLES
+    ============================================================ */
+    :root {
+      --black: #0e0d0b;
+      --deep: #131210;
+      --mid: #1a1916;
+      --parchment: #f5f0e8;
+      --gold: #c9a84c;
+      --gold-dim: rgba(201,168,76,0.35);
+      --gold-glow: rgba(201,168,76,0.12);
+      --text-muted: #8a8272;
+      --serif: 'Cormorant Garamond', Georgia, serif;
+      --sans: 'DM Sans', sans-serif;
+      --ease-out: cubic-bezier(0.16, 1, 0.3, 1);
+      --nav-h: 72px;
+    }
+
+    /* ============================================================
+       RESET & BASE
+    ============================================================ */
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+    body {
+      background: var(--black);
+      color: var(--parchment);
+      font-family: var(--serif);
+      font-weight: 300;
+      overflow-x: hidden;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
+    img { display: block; max-width: 100%; }
+    a { color: inherit; text-decoration: none; }
+    button { cursor: pointer; font-family: inherit; }
+
+    .content-wrap {
+      max-width: 1400px;
+      margin: 0 auto;
+      padding: 0 80px;
+    }
+
+    /* ============================================================
+       TYPOGRAPHY
+    ============================================================ */
+    .section-tag {
+      display: block;
+      font-family: var(--sans);
+      font-size: 11px;
+      font-weight: 400;
+      letter-spacing: 0.22em;
+      text-transform: uppercase;
+      color: var(--gold);
+      margin-bottom: 18px;
+    }
+
+    .section-heading {
+      font-family: var(--serif);
+      font-size: clamp(34px, 3.8vw, 58px);
+      font-weight: 400;
+      font-style: italic;
+      line-height: 1.12;
+      color: var(--parchment);
+    }
+
+    /* ============================================================
+       SCROLL REVEAL
+    ============================================================ */
+    .reveal {
+      opacity: 0;
+      transform: translateY(28px);
+      transition: opacity 0.9s var(--ease-out), transform 0.9s var(--ease-out);
+    }
+    .reveal.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+    .reveal-delay-1 { transition-delay: 0.1s; }
+    .reveal-delay-2 { transition-delay: 0.2s; }
+    .reveal-delay-3 { transition-delay: 0.3s; }
+    .reveal-delay-4 { transition-delay: 0.4s; }
+
+    /* ============================================================
+       BUTTONS
+    ============================================================ */
+    .btn-primary {
+      display: inline-block;
+      font-family: var(--sans);
+      font-size: 11px;
+      font-weight: 400;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      background: var(--gold);
+      color: var(--black);
+      padding: 16px 40px;
+      border: none;
+      transition: background 0.3s, opacity 0.3s;
+    }
+    .btn-primary:hover { background: #d4b05a; }
+
+    .btn-ghost {
+      display: inline-block;
+      font-family: var(--sans);
+      font-size: 11px;
+      font-weight: 400;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      background: transparent;
+      color: var(--parchment);
+      padding: 15px 40px;
+      border: 1px solid var(--gold-dim);
+      transition: border-color 0.3s, color 0.3s;
+    }
+    .btn-ghost:hover {
+      border-color: var(--gold);
+      color: var(--gold);
+    }
+
+    /* ============================================================
+       NAVIGATION
+    ============================================================ */
+    #nav {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: 1000;
+      height: var(--nav-h);
+      display: flex;
+      align-items: center;
+      padding: 0 48px;
+      transition: background 0.4s var(--ease-out), backdrop-filter 0.4s;
+    }
+    #nav.scrolled {
+      background: rgba(14,13,11,0.88);
+      backdrop-filter: blur(16px);
+      -webkit-backdrop-filter: blur(16px);
+      border-bottom: 1px solid rgba(201,168,76,0.12);
+    }
+
+    .nav-logo {
+      flex: 0 0 auto;
+    }
+    .nav-logo img {
+      height: 28px;
+      width: auto;
+      object-fit: contain;
+    }
+
+    .nav-links {
+      flex: 1;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 44px;
+      list-style: none;
+    }
+    .nav-links a {
+      font-family: var(--sans);
+      font-size: 11px;
+      font-weight: 400;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+      color: rgba(245,240,232,0.8);
+      transition: color 0.25s;
+    }
+    .nav-links a:hover { color: var(--gold); }
+
+    .nav-cta {
+      flex: 0 0 auto;
+    }
+
+    /* Hamburger */
+    .nav-hamburger {
+      display: none;
+      flex-direction: column;
+      gap: 5px;
+      background: none;
+      border: none;
+      padding: 4px;
+      margin-left: auto;
+      z-index: 1002;
+    }
+    .nav-hamburger span {
+      display: block;
+      width: 24px;
+      height: 1px;
+      background: var(--parchment);
+      transition: all 0.3s;
+    }
+    .nav-hamburger.open span:nth-child(1) { transform: translateY(6px) rotate(45deg); }
+    .nav-hamburger.open span:nth-child(2) { opacity: 0; }
+    .nav-hamburger.open span:nth-child(3) { transform: translateY(-6px) rotate(-45deg); }
+
+    /* Mobile overlay */
+    .nav-overlay {
+      display: none;
+      position: fixed;
+      inset: 0;
+      background: rgba(14,13,11,0.97);
+      z-index: 1001;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 40px;
+      opacity: 0;
+      transition: opacity 0.3s;
+    }
+    .nav-overlay.open {
+      display: flex;
+      opacity: 1;
+    }
+    .nav-overlay a {
+      font-family: var(--serif);
+      font-size: clamp(28px, 5vw, 42px);
+      font-style: italic;
+      color: var(--parchment);
+      transition: color 0.25s;
+    }
+    .nav-overlay a:hover { color: var(--gold); }
+    .nav-overlay .overlay-cta {
+      margin-top: 20px;
+    }
+
+    /* ============================================================
+       HERO
+    ============================================================ */
+    #hero {
+      position: relative;
+      min-height: 100vh;
+      display: flex;
+      align-items: flex-end;
+      overflow: hidden;
+    }
+
+    .hero-bg {
+      position: absolute;
+      inset: 0;
+    }
+    .hero-bg img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center 30%;
+    }
+    .hero-overlay {
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(
+        to top,
+        rgba(14,13,11,0.92) 0%,
+        rgba(14,13,11,0.45) 45%,
+        rgba(14,13,11,0.08) 100%
+      );
+    }
+
+    .hero-content {
+      position: relative;
+      z-index: 2;
+      padding: 0 80px 80px;
+      max-width: 900px;
+    }
+
+    .hero-label {
+      font-family: var(--sans);
+      font-size: 11px;
+      font-weight: 400;
+      letter-spacing: 0.22em;
+      text-transform: uppercase;
+      color: var(--gold);
+      margin-bottom: 20px;
+    }
+
+    .hero-title {
+      font-family: var(--serif);
+      font-size: clamp(54px, 7.5vw, 108px);
+      font-weight: 300;
+      font-style: italic;
+      line-height: 1.0;
+      color: var(--parchment);
+      margin-bottom: 12px;
+    }
+
+    .hero-sub {
+      font-family: var(--serif);
+      font-size: clamp(18px, 2vw, 26px);
+      font-weight: 300;
+      color: rgba(245,240,232,0.7);
+      margin-bottom: 30px;
+      letter-spacing: 0.04em;
+    }
+
+    .hero-price {
+      font-family: var(--serif);
+      font-size: clamp(22px, 2.4vw, 32px);
+      font-weight: 400;
+      color: var(--gold);
+      margin-bottom: 40px;
+      letter-spacing: 0.03em;
+    }
+
+    .scroll-indicator {
+      position: absolute;
+      bottom: 32px;
+      right: 80px;
+      z-index: 2;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 10px;
+      font-family: var(--sans);
+      font-size: 10px;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: rgba(245,240,232,0.5);
+    }
+    .scroll-indicator .chevron {
+      width: 1px;
+      height: 48px;
+      background: linear-gradient(to bottom, transparent, rgba(201,168,76,0.5));
+      animation: scrollPulse 2s ease-in-out infinite;
+    }
+    @keyframes scrollPulse {
+      0%, 100% { opacity: 0.4; transform: scaleY(1); }
+      50% { opacity: 1; transform: scaleY(1.1); }
+    }
+
+    /* ============================================================
+       STATS BAR
+    ============================================================ */
+    #stats {
+      background: var(--deep);
+      border-top: 1px solid var(--gold-dim);
+      border-bottom: 1px solid var(--gold-dim);
+      padding: 48px 0;
+    }
+
+    .stats-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 0;
+    }
+
+    .stat-item {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      padding: 24px 20px;
+      border-right: 1px solid var(--gold-dim);
+    }
+    .stat-item:last-child { border-right: none; }
+
+    .stat-number {
+      font-family: var(--serif);
+      font-size: clamp(36px, 3.8vw, 52px);
+      font-weight: 300;
+      font-style: italic;
+      color: var(--parchment);
+      line-height: 1;
+      margin-bottom: 10px;
+    }
+
+    .stat-label {
+      font-family: var(--sans);
+      font-size: 10px;
+      font-weight: 400;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: var(--text-muted);
+    }
+
+    /* ============================================================
+       OVERVIEW
+    ============================================================ */
+    #overview {
+      padding: clamp(80px, 9vw, 140px) 0;
+      background: var(--black);
+    }
+
+    .overview-inner {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 100px;
+      align-items: start;
+    }
+
+    .overview-text {
+      max-width: 560px;
+    }
+
+    .overview-body {
+      margin-top: 36px;
+      display: flex;
+      flex-direction: column;
+      gap: 22px;
+    }
+
+    .overview-body p {
+      font-family: var(--serif);
+      font-size: 19px;
+      font-weight: 300;
+      line-height: 1.75;
+      color: rgba(245,240,232,0.85);
+    }
+
+    .pull-quote {
+      margin-top: 44px;
+      padding-left: 28px;
+      border-left: 1px solid var(--gold-dim);
+    }
+    .pull-quote p {
+      font-family: var(--serif);
+      font-size: clamp(20px, 2.2vw, 28px);
+      font-style: italic;
+      font-weight: 300;
+      line-height: 1.5;
+      color: var(--gold);
+    }
+
+    .overview-aside {
+      padding-top: 8px;
+    }
+
+    .overview-detail-card {
+      background: var(--mid);
+      border: 1px solid var(--gold-dim);
+      padding: 40px;
+    }
+
+    .overview-detail-card h3 {
+      font-family: var(--sans);
+      font-size: 10px;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: var(--gold);
+      margin-bottom: 24px;
+    }
+
+    .detail-row {
+      display: flex;
+      justify-content: space-between;
+      padding: 12px 0;
+      border-bottom: 1px solid rgba(201,168,76,0.12);
+      font-family: var(--serif);
+      font-size: 17px;
+      font-weight: 300;
+    }
+    .detail-row:last-child { border-bottom: none; }
+    .detail-label { color: var(--text-muted); }
+    .detail-value { color: var(--parchment); }
+
+    /* ============================================================
+       RESIDENCE (INTERIOR)
+    ============================================================ */
+    #residence {
+      padding: clamp(80px, 9vw, 140px) 0;
+      background: var(--deep);
+    }
+
+    .residence-inner {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 80px;
+      align-items: center;
+    }
+
+    .residence-text {}
+
+    .residence-body {
+      margin-top: 32px;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+    .residence-body p {
+      font-family: var(--serif);
+      font-size: 19px;
+      font-weight: 300;
+      line-height: 1.75;
+      color: rgba(245,240,232,0.85);
+    }
+
+    .residence-features {
+      margin-top: 36px;
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+    .residence-feature {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      font-family: var(--sans);
+      font-size: 13px;
+      letter-spacing: 0.06em;
+      color: rgba(245,240,232,0.75);
+    }
+    .residence-feature::before {
+      content: '';
+      display: block;
+      width: 20px;
+      height: 1px;
+      background: var(--gold);
+      flex-shrink: 0;
+    }
+
+    .residence-image {
+      position: relative;
+      overflow: hidden;
+    }
+    .residence-image img {
+      width: 100%;
+      aspect-ratio: 4/5;
+      object-fit: cover;
+      object-position: center;
+      transition: transform 1.2s var(--ease-out);
+    }
+    .residence-image:hover img { transform: scale(1.03); }
+    .residence-image-caption {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      padding: 40px 24px 24px;
+      background: linear-gradient(to top, rgba(14,13,11,0.7), transparent);
+      font-family: var(--sans);
+      font-size: 10px;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+      color: rgba(245,240,232,0.6);
+    }
+
+    /* ============================================================
+       FULL-BLEED IMAGE
+    ============================================================ */
+    #full-bleed {
+      position: relative;
+      width: 100%;
+      height: 75vh;
+      overflow: hidden;
+    }
+    #full-bleed img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center 35%;
+    }
+    .full-bleed-overlay {
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(
+        to top,
+        rgba(14,13,11,0.75) 0%,
+        rgba(14,13,11,0.2) 60%,
+        transparent 100%
+      );
+    }
+    .full-bleed-text {
+      position: absolute;
+      bottom: 60px;
+      left: 80px;
+      right: 80px;
+      max-width: 760px;
+    }
+    .full-bleed-text p {
+      font-family: var(--serif);
+      font-size: clamp(26px, 3.6vw, 52px);
+      font-style: italic;
+      font-weight: 300;
+      line-height: 1.25;
+      color: var(--parchment);
+      text-shadow: 0 2px 24px rgba(0,0,0,0.5);
+    }
+
+    /* ============================================================
+       PROPERTY HIGHLIGHTS
+    ============================================================ */
+    #highlights {
+      padding: clamp(80px, 9vw, 140px) 0;
+      background: var(--black);
+    }
+
+    .highlights-header {
+      text-align: center;
+      margin-bottom: 72px;
+    }
+
+    .highlights-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 0 80px;
+    }
+
+    .highlight-item {
+      display: flex;
+      align-items: flex-start;
+      gap: 18px;
+      padding: 20px 0;
+      border-bottom: 1px solid rgba(201,168,76,0.12);
+    }
+    .highlight-item:first-child { border-top: 1px solid rgba(201,168,76,0.12); }
+    .highlight-item:nth-child(8) { border-top: 1px solid rgba(201,168,76,0.12); }
+
+    .highlight-icon {
+      width: 28px;
+      height: 28px;
+      flex-shrink: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-top: 1px;
+    }
+    .highlight-icon svg {
+      width: 18px;
+      height: 18px;
+      stroke: var(--gold);
+      fill: none;
+      stroke-width: 1.5;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+    }
+
+    .highlight-text {
+      font-family: var(--serif);
+      font-size: 18px;
+      font-weight: 300;
+      line-height: 1.5;
+      color: rgba(245,240,232,0.88);
+    }
+
+    /* ============================================================
+       GALLERY
+    ============================================================ */
+    #gallery {
+      padding: clamp(80px, 9vw, 140px) 0;
+      background: var(--deep);
+    }
+
+    .gallery-header {
+      text-align: center;
+      margin-bottom: 60px;
+    }
+
+    .gallery-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 3px;
+    }
+
+    .gallery-cell {
+      overflow: hidden;
+      position: relative;
+      cursor: pointer;
+    }
+    .gallery-cell.tall { grid-row: span 2; }
+    .gallery-cell img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.9s var(--ease-out);
+      display: block;
+    }
+    .gallery-cell:not(.tall) {
+      aspect-ratio: 4/3;
+    }
+    .gallery-cell.tall {
+      aspect-ratio: unset;
+    }
+    .gallery-cell:hover img { transform: scale(1.04); }
+    .gallery-cell-overlay {
+      position: absolute;
+      inset: 0;
+      background: rgba(14,13,11,0);
+      transition: background 0.3s;
+    }
+    .gallery-cell:hover .gallery-cell-overlay {
+      background: rgba(14,13,11,0.2);
+    }
+
+    .gallery-cta {
+      text-align: center;
+      margin-top: 48px;
+    }
+
+    /* Lightbox */
+    #lightbox {
+      display: none;
+      position: fixed;
+      inset: 0;
+      z-index: 10000;
+      background: rgba(10,9,8,0.97);
+      backdrop-filter: blur(8px);
+      -webkit-backdrop-filter: blur(8px);
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+    #lightbox.open { display: flex; }
+
+    .lightbox-close {
+      position: absolute;
+      top: 24px;
+      right: 32px;
+      background: none;
+      border: none;
+      color: rgba(245,240,232,0.6);
+      font-size: 28px;
+      font-weight: 300;
+      line-height: 1;
+      transition: color 0.2s;
+      z-index: 2;
+      padding: 8px;
+    }
+    .lightbox-close:hover { color: var(--parchment); }
+
+    .lightbox-counter {
+      position: absolute;
+      top: 32px;
+      left: 50%;
+      transform: translateX(-50%);
+      font-family: var(--sans);
+      font-size: 11px;
+      letter-spacing: 0.16em;
+      color: rgba(245,240,232,0.5);
+      text-transform: uppercase;
+    }
+
+    .lightbox-img-wrap {
+      position: relative;
+      max-width: 90vw;
+      max-height: 82vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    #lightbox-img {
+      max-width: 90vw;
+      max-height: 82vh;
+      object-fit: contain;
+      display: block;
+    }
+
+    .lightbox-arrow {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      background: rgba(14,13,11,0.6);
+      border: 1px solid var(--gold-dim);
+      color: var(--parchment);
+      width: 52px;
+      height: 52px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 20px;
+      transition: background 0.2s, border-color 0.2s;
+      backdrop-filter: blur(6px);
+      z-index: 10;
+    }
+    .lightbox-arrow:hover {
+      background: rgba(14,13,11,0.9);
+      border-color: var(--gold);
+    }
+    .lightbox-prev { left: -70px; }
+    .lightbox-next { right: -70px; }
+
+    /* ============================================================
+       LOCATION
+    ============================================================ */
+    #location {
+      padding: clamp(80px, 9vw, 140px) 0;
+      background: var(--black);
+    }
+
+    .location-inner {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 80px;
+      align-items: center;
+    }
+
+    .location-text {}
+
+    .location-body {
+      margin-top: 32px;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+    .location-body p {
+      font-family: var(--serif);
+      font-size: 19px;
+      font-weight: 300;
+      line-height: 1.75;
+      color: rgba(245,240,232,0.85);
+    }
+
+    .location-amenities {
+      margin-top: 36px;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+    .location-amenity {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      font-family: var(--sans);
+      font-size: 13px;
+      letter-spacing: 0.05em;
+      color: rgba(245,240,232,0.7);
+    }
+    .location-amenity::before {
+      content: '';
+      display: block;
+      width: 20px;
+      height: 1px;
+      background: var(--gold);
+      flex-shrink: 0;
+    }
+
+    .location-image {
+      position: relative;
+      overflow: hidden;
+    }
+    .location-image img {
+      width: 100%;
+      aspect-ratio: 4/3;
+      object-fit: cover;
+      transition: transform 1.2s var(--ease-out);
+    }
+    .location-image:hover img { transform: scale(1.03); }
+    .location-image-tag {
+      position: absolute;
+      bottom: 24px;
+      left: 24px;
+      font-family: var(--sans);
+      font-size: 10px;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: var(--gold);
+      background: rgba(14,13,11,0.75);
+      padding: 8px 14px;
+      backdrop-filter: blur(6px);
+    }
+
+    /* ============================================================
+       STR PROJECTIONS STRIP
+    ============================================================ */
+    #str-strip {
+      padding: 100px 0;
+      background: var(--mid);
+      border-top: 1px solid var(--gold-dim);
+      border-bottom: 1px solid var(--gold-dim);
+      text-align: center;
+    }
+
+    .str-inner {
+      max-width: 700px;
+      margin: 0 auto;
+      padding: 0 40px;
+    }
+
+    .str-inner .section-heading {
+      margin-bottom: 24px;
+    }
+
+    .str-inner p {
+      font-family: var(--serif);
+      font-size: 19px;
+      font-weight: 300;
+      line-height: 1.75;
+      color: rgba(245,240,232,0.8);
+      margin-bottom: 40px;
+    }
+
+    /* ============================================================
+       CONTACT
+    ============================================================ */
+    #contact {
+      padding: clamp(80px, 9vw, 140px) 0;
+      background: var(--deep);
+    }
+
+    .contact-inner {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 100px;
+      align-items: start;
+    }
+
+    .contact-info {}
+
+    .contact-address-block {
+      margin-top: 40px;
+    }
+    .contact-address-block .price {
+      font-family: var(--serif);
+      font-size: clamp(28px, 3vw, 42px);
+      font-weight: 400;
+      font-style: italic;
+      color: var(--gold);
+      margin-bottom: 8px;
+    }
+    .contact-address-block .address {
+      font-family: var(--serif);
+      font-size: 19px;
+      font-weight: 300;
+      color: rgba(245,240,232,0.7);
+      line-height: 1.5;
+    }
+
+    .contact-agent-cards {
+      margin-top: 52px;
+      display: flex;
+      flex-direction: column;
+      gap: 24px;
+    }
+    .agent-card {
+      padding: 28px 32px;
+      border: 1px solid var(--gold-dim);
+      background: rgba(255,255,255,0.02);
+    }
+    .agent-card .role {
+      font-family: var(--sans);
+      font-size: 10px;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: var(--gold);
+      margin-bottom: 10px;
+    }
+    .agent-card .name {
+      font-family: var(--serif);
+      font-size: 20px;
+      font-weight: 400;
+      color: var(--parchment);
+      margin-bottom: 8px;
+    }
+    .agent-card .contact-line {
+      font-family: var(--sans);
+      font-size: 13px;
+      color: rgba(245,240,232,0.6);
+      line-height: 1.8;
+    }
+    .agent-card .contact-line a {
+      color: rgba(245,240,232,0.6);
+      transition: color 0.25s;
+    }
+    .agent-card .contact-line a:hover { color: var(--gold); }
+
+    /* Form */
+    .contact-form-wrap {}
+
+    .inquiry-form {
+      display: flex;
+      flex-direction: column;
+      gap: 24px;
+    }
+
+    .form-row {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 24px;
+    }
+
+    .form-field {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+    }
+    .form-field label {
+      font-family: var(--sans);
+      font-size: 10px;
+      font-weight: 400;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: var(--text-muted);
+    }
+    .form-field input,
+    .form-field select,
+    .form-field textarea {
+      background: transparent;
+      border: none;
+      border-bottom: 1px solid var(--gold-dim);
+      color: var(--parchment);
+      font-family: var(--serif);
+      font-size: 17px;
+      font-weight: 300;
+      padding: 12px 0;
+      outline: none;
+      transition: border-color 0.3s;
+      width: 100%;
+    }
+    .form-field input:focus,
+    .form-field select:focus,
+    .form-field textarea:focus {
+      border-bottom-color: var(--gold);
+    }
+    .form-field select {
+      -webkit-appearance: none;
+      appearance: none;
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'%3E%3Cpath d='M1 1l5 5 5-5' stroke='%23c9a84c' stroke-width='1.5' fill='none'/%3E%3C/svg%3E");
+      background-repeat: no-repeat;
+      background-position: right 4px center;
+      cursor: pointer;
+    }
+    .form-field select option { background: var(--mid); color: var(--parchment); }
+    .form-field textarea { resize: vertical; min-height: 100px; }
+
+    .form-submit-wrap {
+      margin-top: 8px;
+    }
+
+    .form-submit-btn {
+      width: 100%;
+      padding: 20px;
+      background: var(--gold);
+      color: var(--black);
+      border: none;
+      font-family: var(--sans);
+      font-size: 11px;
+      font-weight: 400;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      transition: background 0.3s, opacity 0.3s;
+    }
+    .form-submit-btn:hover { background: #d4b05a; }
+    .form-submit-btn:disabled { opacity: 0.6; cursor: not-allowed; }
+
+    .form-success {
+      display: none;
+      text-align: center;
+      padding: 48px 40px;
+      border: 1px solid var(--gold-dim);
+    }
+    .form-success.visible { display: block; }
+    .form-success h3 {
+      font-family: var(--serif);
+      font-size: 26px;
+      font-style: italic;
+      font-weight: 400;
+      color: var(--parchment);
+      margin-bottom: 12px;
+    }
+    .form-success p {
+      font-family: var(--serif);
+      font-size: 17px;
+      font-weight: 300;
+      color: rgba(245,240,232,0.7);
+    }
+
+    .form-mls {
+      margin-top: 20px;
+      font-family: var(--sans);
+      font-size: 11px;
+      letter-spacing: 0.1em;
+      color: var(--text-muted);
+    }
+
+    /* ============================================================
+       FOOTER
+    ============================================================ */
+    footer {
+      background: var(--black);
+      border-top: 1px solid var(--gold-dim);
+      padding: 60px 0 40px;
+    }
+
+    .footer-inner {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      gap: 32px;
+    }
+
+    .footer-logo img {
+      height: 22px;
+      width: auto;
+      opacity: 0.7;
+    }
+
+    .footer-agents {
+      display: flex;
+      gap: 60px;
+      align-items: flex-start;
+    }
+
+    .footer-agent {
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
+    }
+    .footer-agent .role {
+      font-family: var(--sans);
+      font-size: 10px;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: var(--gold);
+      margin-bottom: 6px;
+    }
+    .footer-agent .agent-name {
+      font-family: var(--serif);
+      font-size: 16px;
+      font-weight: 400;
+      color: var(--parchment);
+    }
+    .footer-agent .agent-contact {
+      font-family: var(--sans);
+      font-size: 12px;
+      color: var(--text-muted);
+      line-height: 1.8;
+    }
+    .footer-agent .agent-contact a {
+      color: var(--text-muted);
+      transition: color 0.25s;
+    }
+    .footer-agent .agent-contact a:hover { color: var(--gold); }
+
+    .footer-divider {
+      width: 40px;
+      height: 1px;
+      background: var(--gold-dim);
+    }
+
+    .footer-address {
+      font-family: var(--sans);
+      font-size: 12px;
+      letter-spacing: 0.08em;
+      color: var(--text-muted);
+    }
+
+    .footer-legal {
+      max-width: 640px;
+    }
+    .footer-legal p {
+      font-family: var(--sans);
+      font-size: 11px;
+      letter-spacing: 0.06em;
+      color: rgba(138,130,114,0.65);
+      line-height: 1.8;
+    }
+
+    .footer-eho {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-family: var(--sans);
+      font-size: 11px;
+      letter-spacing: 0.06em;
+      color: rgba(138,130,114,0.65);
+    }
+
+    /* ============================================================
+       RESPONSIVE
+    ============================================================ */
+    @media (max-width: 1200px) {
+      .content-wrap { padding: 0 48px; }
+      .overview-inner { gap: 60px; }
+      .residence-inner { gap: 52px; }
+      .contact-inner { gap: 60px; }
+      .highlights-grid { gap: 0 48px; }
+    }
+
+    @media (max-width: 900px) {
+      .content-wrap { padding: 0 28px; }
+      :root { --nav-h: 64px; }
+
+      .nav-links { display: none; }
+      .nav-cta { display: none; }
+      .nav-hamburger { display: flex; }
+
+      .hero-content { padding: 0 28px 72px; }
+      .scroll-indicator { right: 28px; }
+
+      .stats-grid { grid-template-columns: repeat(2, 1fr); }
+      .stat-item:nth-child(2) { border-right: none; }
+      .stat-item:nth-child(3) { border-top: 1px solid var(--gold-dim); }
+      .stat-item:nth-child(4) { border-top: 1px solid var(--gold-dim); }
+
+      .overview-inner { grid-template-columns: 1fr; gap: 52px; }
+      .overview-text { max-width: 100%; }
+
+      .residence-inner { grid-template-columns: 1fr; gap: 48px; }
+      .residence-image img { aspect-ratio: 16/10; }
+
+      .highlights-grid { grid-template-columns: 1fr; gap: 0; }
+      .highlight-item:nth-child(8) { border-top: none; }
+
+      .location-inner { grid-template-columns: 1fr; gap: 48px; }
+
+      .contact-inner { grid-template-columns: 1fr; gap: 56px; }
+
+      .full-bleed-text { left: 28px; right: 28px; bottom: 40px; }
+
+      .gallery-grid { grid-template-columns: repeat(2, 1fr); }
+      .gallery-cell.tall { grid-row: span 1; aspect-ratio: 4/3; }
+
+      .footer-agents { flex-direction: column; gap: 32px; align-items: center; }
+    }
+
+    @media (max-width: 600px) {
+      .hero-title { font-size: clamp(44px, 12vw, 72px); }
+
+      .stats-grid { grid-template-columns: 1fr 1fr; }
+
+      .gallery-grid { grid-template-columns: 1fr; }
+      .gallery-cell.tall { aspect-ratio: 4/3; }
+
+      .form-row { grid-template-columns: 1fr; }
+
+      .lightbox-prev { left: -20px; }
+      .lightbox-next { right: -20px; }
+      .lightbox-arrow { width: 40px; height: 40px; font-size: 16px; }
+
+      #full-bleed { height: 55vh; }
+      .full-bleed-text { left: 24px; right: 24px; }
+
+      .footer-agents { gap: 28px; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ============================================================
+       NAVIGATION
+  ============================================================ -->
+  <nav id="nav" role="navigation" aria-label="Main navigation">
+    <div class="nav-logo">
+      <a href="#" aria-label="Posterity 44 — Home">
+        <img src="./assets/logo.png" alt="Posterity 44" width="140" height="29">
+      </a>
+    </div>
+
+    <ul class="nav-links" role="list">
+      <li><a href="#overview">Overview</a></li>
+      <li><a href="#residence">Residence</a></li>
+      <li><a href="#gallery">Gallery</a></li>
+      <li><a href="#location">Location</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+
+    <div class="nav-cta">
+      <a href="#contact" class="btn-primary">Inquire</a>
+    </div>
+
+    <button class="nav-hamburger" id="hamburger" aria-label="Open menu" aria-expanded="false">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+  </nav>
+
+  <!-- Mobile overlay -->
+  <div class="nav-overlay" id="nav-overlay" role="dialog" aria-modal="true" aria-label="Navigation menu">
+    <a href="#overview" class="overlay-link">Overview</a>
+    <a href="#residence" class="overlay-link">Residence</a>
+    <a href="#gallery" class="overlay-link">Gallery</a>
+    <a href="#location" class="overlay-link">Location</a>
+    <a href="#contact" class="overlay-link">Contact</a>
+    <a href="#contact" class="btn-primary overlay-cta">Inquire</a>
+  </div>
+
+  <!-- ============================================================
+       HERO
+  ============================================================ -->
+  <section id="hero" aria-label="Property hero">
+    <div class="hero-bg">
+      <img src="./assets/gallery/photo_00.jpg"
+           alt="Aerial view of 10 Thunder Road with Sedona's red rock formations at sunset"
+           fetchpriority="high">
+    </div>
+    <div class="hero-overlay" aria-hidden="true"></div>
+
+    <div class="hero-content">
+      <p class="hero-label">Sedona, Arizona · Canyon Mesa Country Club</p>
+      <h1 class="hero-title">10 Thunder<br>Road</h1>
+      <p class="hero-sub">An Estate Reimagined</p>
+      <p class="hero-price">$3,495,000</p>
+      <a href="#contact" class="btn-primary">Inquire</a>
+    </div>
+
+    <div class="scroll-indicator" aria-hidden="true">
+      <div class="chevron"></div>
+      <span>Explore</span>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       STATS BAR
+  ============================================================ -->
+  <section id="stats" aria-label="Property key statistics">
+    <div class="content-wrap">
+      <div class="stats-grid">
+        <div class="stat-item reveal">
+          <span class="stat-number">6,200</span>
+          <span class="stat-label">Square Feet</span>
+        </div>
+        <div class="stat-item reveal reveal-delay-1">
+          <span class="stat-number">4</span>
+          <span class="stat-label">Bedrooms</span>
+        </div>
+        <div class="stat-item reveal reveal-delay-2">
+          <span class="stat-number">7</span>
+          <span class="stat-label">Car Garage</span>
+        </div>
+        <div class="stat-item reveal reveal-delay-3">
+          <span class="stat-number">21kW</span>
+          <span class="stat-label">Solar System</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       OVERVIEW
+  ============================================================ -->
+  <section id="overview" aria-label="Property overview">
+    <div class="content-wrap">
+      <div class="overview-inner">
+        <div class="overview-text">
+          <span class="section-tag reveal">The Opportunity</span>
+          <h2 class="section-heading reveal reveal-delay-1">Nothing Else<br>Like This in Sedona</h2>
+          <div class="overview-body">
+            <p class="reveal reveal-delay-2">There are properties, and then there are legacies. Ten Thunder Road is the latter — a 6,200-square-foot contemporary ranch that commands one of the most coveted positions in all of Canyon Mesa Country Club, where panoramic views of Bell Rock, Courthouse Butte, and the Tonto National Forest unfold from every level. What was built in 1994 was entirely reimagined in 2017, the result of an uncompromising commitment to craft that touches every surface, system, and space within.</p>
+            <p class="reveal reveal-delay-3">The estate spans three distinct levels of living, each with its own purpose and character. Vaulted ceilings with exposed wood beams carry through the main residence, while a grand double-height entry foyer with a sculptural spiral staircase announces the scale of what lies beyond. The primary suite opens directly to the pool deck. A private theater with wet bar, a dedicated fitness room, and a mother-in-law suite with its own entrance and garage ensure that every need — for solitude or celebration — has its proper place.</p>
+            <p class="reveal reveal-delay-4">The compound extends beyond the residence: a 7-car garage including two RV bays, a 21kW solar system, and short-term rental zoning that opens the door to compelling income potential. Canyon Mesa's HOA covers exterior maintenance, unlimited golf, tennis, and pickleball — a lifestyle without compromise, a holding without equal.</p>
+            <blockquote class="pull-quote reveal">
+              <p>"Reimagined for a new generation of Sedona living."</p>
+            </blockquote>
+          </div>
+        </div>
+
+        <div class="overview-aside reveal reveal-delay-2">
+          <div class="overview-detail-card">
+            <h3>Property Details</h3>
+            <div class="detail-row">
+              <span class="detail-label">Address</span>
+              <span class="detail-value">10 Thunder Road</span>
+            </div>
+            <div class="detail-row">
+              <span class="detail-label">Price</span>
+              <span class="detail-value">$3,495,000</span>
+            </div>
+            <div class="detail-row">
+              <span class="detail-label">MLS#</span>
+              <span class="detail-value">7011163</span>
+            </div>
+            <div class="detail-row">
+              <span class="detail-label">Living Area</span>
+              <span class="detail-value">6,200 SF</span>
+            </div>
+            <div class="detail-row">
+              <span class="detail-label">Lot Size</span>
+              <span class="detail-value">9,474 SF (0.22 ac)</span>
+            </div>
+            <div class="detail-row">
+              <span class="detail-label">Bedrooms / Baths</span>
+              <span class="detail-value">4 BD / 4.5 BA</span>
+            </div>
+            <div class="detail-row">
+              <span class="detail-label">Year Built</span>
+              <span class="detail-value">1994 / Reimagined 2017</span>
+            </div>
+            <div class="detail-row">
+              <span class="detail-label">Levels</span>
+              <span class="detail-value">Three</span>
+            </div>
+            <div class="detail-row">
+              <span class="detail-label">Garage</span>
+              <span class="detail-value">7-car (incl. 2 RV bays)</span>
+            </div>
+            <div class="detail-row">
+              <span class="detail-label">HOA</span>
+              <span class="detail-value">$2,028 / month</span>
+            </div>
+            <div class="detail-row">
+              <span class="detail-label">Taxes (2025)</span>
+              <span class="detail-value">$8,883</span>
+            </div>
+            <div class="detail-row">
+              <span class="detail-label">APN</span>
+              <span class="detail-value">405-46-107-A</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       RESIDENCE
+  ============================================================ -->
+  <section id="residence" aria-label="The Residence">
+    <div class="content-wrap">
+      <div class="residence-inner">
+        <div class="residence-text">
+          <span class="section-tag reveal">The Residence</span>
+          <h2 class="section-heading reveal reveal-delay-1">Three Levels<br>of Living</h2>
+          <div class="residence-body">
+            <p class="reveal reveal-delay-2">The main level announces itself through a double-height entry foyer — a sculptural moment of vaulted volume, warm stone, and a spiral staircase that ascends through all three floors. Light pours in from clerestory windows, illuminating the craftsmanship in every detail: the hand-finished woodwork, the custom millwork, the quiet luxury of a space that has been conceived, not merely decorated.</p>
+            <p class="reveal reveal-delay-3">The primary suite is its own sanctuary — vaulted wood beam ceilings, panoramic windows framing the red rock escarpment, and direct access to the heated pool and spa. Below, a dedicated home theater with wet bar and a private fitness room serve the pursuit of the fully lived life. The mother-in-law suite, with its separate entrance, private garage, and modern kitchenette, offers true independence within the compound — ideal for extended family, a private caretaker, or income-generating flexibility.</p>
+          </div>
+          <div class="residence-features reveal reveal-delay-4">
+            <div class="residence-feature">Vaulted ceilings with wood beams throughout</div>
+            <div class="residence-feature">Primary suite with direct pool access</div>
+            <div class="residence-feature">Home theater with wet bar</div>
+            <div class="residence-feature">Private fitness room</div>
+            <div class="residence-feature">Mother-in-law suite with separate entrance</div>
+            <div class="residence-feature">3 gas fireplaces</div>
+          </div>
+        </div>
+
+        <div class="residence-image reveal reveal-delay-2">
+          <img src="./assets/gallery/photo_10.jpg"
+               alt="Grand entry foyer with double-height ceiling, spiral staircase, and modern chandeliers"
+               loading="lazy">
+          <div class="residence-image-caption">Grand Entry Foyer</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       FULL-BLEED IMAGE
+  ============================================================ -->
+  <section id="full-bleed" aria-label="Primary suite with red rock views">
+    <img src="./assets/gallery/photo_15.jpg"
+         alt="Primary bedroom with vaulted wood beam ceiling and panoramic red rock views"
+         loading="lazy">
+    <div class="full-bleed-overlay" aria-hidden="true"></div>
+    <div class="full-bleed-text reveal">
+      <p>Where Red Rock Views<br>Meet Refined Living.</p>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       HIGHLIGHTS
+  ============================================================ -->
+  <section id="highlights" aria-label="Property highlights">
+    <div class="content-wrap">
+      <div class="highlights-header">
+        <span class="section-tag reveal">At a Glance</span>
+        <h2 class="section-heading reveal reveal-delay-1">Property Highlights</h2>
+      </div>
+      <div class="highlights-grid">
+        <!-- Left column -->
+        <div class="highlight-item reveal">
+          <div class="highlight-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+          </div>
+          <span class="highlight-text">6,200 SF across three levels</span>
+        </div>
+        <div class="highlight-item reveal">
+          <div class="highlight-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24"><rect x="1" y="3" width="15" height="13" rx="1"/><path d="M16 8h4l3 3v5h-7V8z"/><circle cx="5.5" cy="18.5" r="2.5"/><circle cx="18.5" cy="18.5" r="2.5"/></svg>
+          </div>
+          <span class="highlight-text">7-car garage including 2 RV bays</span>
+        </div>
+
+        <div class="highlight-item reveal reveal-delay-1">
+          <div class="highlight-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24"><path d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z"/></svg>
+          </div>
+          <span class="highlight-text">4 bedrooms, 4.5 bathrooms</span>
+        </div>
+        <div class="highlight-item reveal reveal-delay-1">
+          <div class="highlight-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
+          </div>
+          <span class="highlight-text">21kW solar system</span>
+        </div>
+
+        <div class="highlight-item reveal reveal-delay-2">
+          <div class="highlight-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+          </div>
+          <span class="highlight-text">Primary suite with direct pool access</span>
+        </div>
+        <div class="highlight-item reveal reveal-delay-2">
+          <div class="highlight-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.81a19.79 19.79 0 01-3.07-8.7A2 2 0 012 .92h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L6.09 8.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z"/></svg>
+          </div>
+          <span class="highlight-text">Heated pool &amp; spa</span>
+        </div>
+
+        <div class="highlight-item reveal reveal-delay-3">
+          <div class="highlight-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+          </div>
+          <span class="highlight-text">Vaulted ceilings with wood beams throughout</span>
+        </div>
+        <div class="highlight-item reveal reveal-delay-3">
+          <div class="highlight-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24"><path d="M20 9v11a2 2 0 01-2 2H6a2 2 0 01-2-2V9"/><path d="M9 22V12h6v10"/><path d="M2 10.6L12 2l10 8.6"/></svg>
+          </div>
+          <span class="highlight-text">Mother-in-law suite with separate entrance</span>
+        </div>
+
+        <div class="highlight-item reveal reveal-delay-4">
+          <div class="highlight-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24"><path d="M12 3h7a2 2 0 012 2v14a2 2 0 01-2 2h-7m0-18H5a2 2 0 00-2 2v14a2 2 0 002 2h7m0-18v18"/></svg>
+          </div>
+          <span class="highlight-text">3 gas fireplaces</span>
+        </div>
+        <div class="highlight-item reveal reveal-delay-4">
+          <div class="highlight-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24"><path d="M12 22C6.477 22 2 17.523 2 12S6.477 2 12 2s10 4.477 10 10-4.477 10-10 10z"/><path d="M12 6v6l4 2"/></svg>
+          </div>
+          <span class="highlight-text">Security system throughout</span>
+        </div>
+
+        <div class="highlight-item reveal">
+          <div class="highlight-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+          </div>
+          <span class="highlight-text">Theater room with wet bar</span>
+        </div>
+        <div class="highlight-item reveal reveal-delay-1">
+          <div class="highlight-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 8v4l3 3"/></svg>
+          </div>
+          <span class="highlight-text">STR-friendly zoning</span>
+        </div>
+
+        <div class="highlight-item reveal reveal-delay-2">
+          <div class="highlight-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
+          </div>
+          <span class="highlight-text">Private fitness room</span>
+        </div>
+        <div class="highlight-item reveal reveal-delay-2">
+          <div class="highlight-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24"><polyline points="23 6 13.5 15.5 8.5 10.5 1 18"/><polyline points="17 6 23 6 23 12"/></svg>
+          </div>
+          <span class="highlight-text">Fully reimagined in 2017</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       GALLERY
+  ============================================================ -->
+  <section id="gallery" aria-label="Photo gallery">
+    <div class="content-wrap">
+      <div class="gallery-header">
+        <span class="section-tag reveal">Gallery</span>
+        <h2 class="section-heading reveal reveal-delay-1">Explore the Estate</h2>
+      </div>
+
+      <div class="gallery-grid" id="gallery-grid">
+        <!-- Cell layout: tall=span2, otherwise normal 4:3 -->
+        <div class="gallery-cell tall reveal" data-index="0" role="button" tabindex="0" aria-label="Open photo 1 in lightbox">
+          <img src="./assets/gallery/photo_00.jpg" alt="Aerial view of estate with red rock formations" loading="lazy">
+          <div class="gallery-cell-overlay" aria-hidden="true"></div>
+        </div>
+        <div class="gallery-cell reveal reveal-delay-1" data-index="1" role="button" tabindex="0" aria-label="Open photo 2 in lightbox">
+          <img src="./assets/gallery/photo_01.jpg" alt="Aerial rear view at sunset" loading="lazy">
+          <div class="gallery-cell-overlay" aria-hidden="true"></div>
+        </div>
+        <div class="gallery-cell reveal reveal-delay-2" data-index="2" role="button" tabindex="0" aria-label="Open photo 3 in lightbox">
+          <img src="./assets/gallery/photo_02.jpg" alt="Aerial view of estate" loading="lazy">
+          <div class="gallery-cell-overlay" aria-hidden="true"></div>
+        </div>
+        <div class="gallery-cell reveal reveal-delay-1" data-index="3" role="button" tabindex="0" aria-label="Open photo 4 in lightbox">
+          <img src="./assets/gallery/photo_03.jpg" alt="Front entrance and driveway" loading="lazy">
+          <div class="gallery-cell-overlay" aria-hidden="true"></div>
+        </div>
+        <div class="gallery-cell tall reveal reveal-delay-2" data-index="4" role="button" tabindex="0" aria-label="Open photo 5 in lightbox">
+          <img src="./assets/gallery/photo_04.jpg" alt="Exterior detail" loading="lazy">
+          <div class="gallery-cell-overlay" aria-hidden="true"></div>
+        </div>
+        <div class="gallery-cell reveal" data-index="5" role="button" tabindex="0" aria-label="Open photo 6 in lightbox">
+          <img src="./assets/gallery/photo_05.jpg" alt="Guest bedroom with beamed ceiling" loading="lazy">
+          <div class="gallery-cell-overlay" aria-hidden="true"></div>
+        </div>
+        <div class="gallery-cell reveal reveal-delay-1" data-index="6" role="button" tabindex="0" aria-label="Open photo 7 in lightbox">
+          <img src="./assets/gallery/photo_06.jpg" alt="Interior room" loading="lazy">
+          <div class="gallery-cell-overlay" aria-hidden="true"></div>
+        </div>
+        <div class="gallery-cell reveal reveal-delay-2" data-index="7" role="button" tabindex="0" aria-label="Open photo 8 in lightbox">
+          <img src="./assets/gallery/photo_07.jpg" alt="Interior room" loading="lazy">
+          <div class="gallery-cell-overlay" aria-hidden="true"></div>
+        </div>
+        <div class="gallery-cell reveal" data-index="8" role="button" tabindex="0" aria-label="Open photo 9 in lightbox">
+          <img src="./assets/gallery/photo_08.jpg" alt="Interior room" loading="lazy">
+          <div class="gallery-cell-overlay" aria-hidden="true"></div>
+        </div>
+        <div class="gallery-cell tall reveal reveal-delay-1" data-index="9" role="button" tabindex="0" aria-label="Open photo 10 in lightbox">
+          <img src="./assets/gallery/photo_09.jpg" alt="Interior room" loading="lazy">
+          <div class="gallery-cell-overlay" aria-hidden="true"></div>
+        </div>
+        <div class="gallery-cell reveal reveal-delay-2" data-index="10" role="button" tabindex="0" aria-label="Open photo 11 in lightbox">
+          <img src="./assets/gallery/photo_10.jpg" alt="Grand entry foyer with spiral staircase" loading="lazy">
+          <div class="gallery-cell-overlay" aria-hidden="true"></div>
+        </div>
+        <div class="gallery-cell reveal" data-index="11" role="button" tabindex="0" aria-label="Open photo 12 in lightbox">
+          <img src="./assets/gallery/photo_11.jpg" alt="Interior detail" loading="lazy">
+          <div class="gallery-cell-overlay" aria-hidden="true"></div>
+        </div>
+      </div>
+
+      <div class="gallery-cta reveal">
+        <button class="btn-ghost" id="view-all-btn">View All 50 Photos</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       LIGHTBOX
+  ============================================================ -->
+  <div id="lightbox" role="dialog" aria-modal="true" aria-label="Photo lightbox">
+    <div class="lightbox-counter" id="lightbox-counter" aria-live="polite">1 / 50</div>
+    <button class="lightbox-close" id="lightbox-close" aria-label="Close lightbox">&times;</button>
+
+    <div class="lightbox-img-wrap">
+      <button class="lightbox-arrow lightbox-prev" id="lightbox-prev" aria-label="Previous photo">&#8592;</button>
+      <img id="lightbox-img" src="" alt="" loading="lazy">
+      <button class="lightbox-arrow lightbox-next" id="lightbox-next" aria-label="Next photo">&#8594;</button>
+    </div>
+  </div>
+
+  <!-- ============================================================
+       LOCATION
+  ============================================================ -->
+  <section id="location" aria-label="Location and lifestyle">
+    <div class="content-wrap">
+      <div class="location-inner">
+        <div class="location-text">
+          <span class="section-tag reveal">The Location</span>
+          <h2 class="section-heading reveal reveal-delay-1">Canyon Mesa<br>Country Club</h2>
+          <div class="location-body">
+            <p class="reveal reveal-delay-2">Set within one of Arizona's most celebrated executive golf communities, 10 Thunder Road occupies a premier position where the golf course meets the red rock wilderness. Canyon Mesa is not merely a neighborhood — it is a curated lifestyle, set against a backdrop that has no peer in the American Southwest.</p>
+            <p class="reveal reveal-delay-3">The HOA, at $2,028 per month, is perhaps the most compelling value proposition in Sedona: it covers all exterior maintenance and grants unlimited access to golf, tennis, and pickleball — a complete resort experience woven into the fabric of daily life. Beyond the gates, the Village of Oak Creek and the Red Rock Scenic Byway are moments away. Tonto National Forest trails begin at the perimeter. Sedona's acclaimed restaurants, art galleries, and cultural institutions are a fifteen-minute drive north.</p>
+          </div>
+          <div class="location-amenities reveal reveal-delay-4">
+            <div class="location-amenity">Executive golf course — included in HOA</div>
+            <div class="location-amenity">Tennis &amp; pickleball — included in HOA</div>
+            <div class="location-amenity">Exterior maintenance — included in HOA</div>
+            <div class="location-amenity">Village of Oak Creek — moments away</div>
+            <div class="location-amenity">Red Rock Scenic Byway — adjacent</div>
+            <div class="location-amenity">Tonto National Forest — at the doorstep</div>
+            <div class="location-amenity">Sedona dining &amp; galleries — 15 min</div>
+          </div>
+        </div>
+
+        <div class="location-image reveal reveal-delay-2">
+          <img src="./assets/gallery/photo_45.jpg"
+               alt="Deck with panoramic red rock views"
+               loading="lazy">
+          <div class="location-image-tag">Canyon Mesa Estate</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       STR STRIP
+  ============================================================ -->
+  <section id="str-strip" aria-label="Investment potential">
+    <div class="str-inner">
+      <span class="section-tag reveal">Investment Potential</span>
+      <h2 class="section-heading reveal reveal-delay-1">Short-Term Rental<br>Projections Available</h2>
+      <p class="reveal reveal-delay-2">This property is STR-friendly with strong income potential in one of Arizona's most visited destinations. Detailed short-term rental projections, occupancy data, and revenue estimates are available upon request.</p>
+      <a href="#contact" class="btn-ghost reveal reveal-delay-3">Request STR Projections</a>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       CONTACT
+  ============================================================ -->
+  <section id="contact" aria-label="Contact and inquiry">
+    <div class="content-wrap">
+      <div class="contact-inner">
+        <div class="contact-info">
+          <span class="section-tag reveal">Connect</span>
+          <h2 class="section-heading reveal reveal-delay-1">Schedule a<br>Private Showing</h2>
+
+          <div class="contact-address-block reveal reveal-delay-2">
+            <div class="price">$3,495,000</div>
+            <div class="address">10 Thunder Road<br>Sedona, AZ 86351</div>
+          </div>
+
+          <div class="contact-agent-cards">
+            <div class="agent-card reveal reveal-delay-2">
+              <div class="role">Listing Broker</div>
+              <div class="name">Johnny Johnson</div>
+              <div class="contact-line">
+                Posterity 44 LLC<br>
+                <a href="tel:9282022720">(928) 202-2720</a><br>
+                <a href="mailto:jack@posterity44.com">jack@posterity44.com</a>
+              </div>
+            </div>
+            <div class="agent-card reveal reveal-delay-3">
+              <div class="role">Listing Agent</div>
+              <div class="name">Jack Johnson</div>
+              <div class="contact-line">
+                <a href="tel:9283009626">(928) 300-9626</a><br>
+                <a href="mailto:johnnysedona@gmail.com">johnnysedona@gmail.com</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="contact-form-wrap reveal reveal-delay-2">
+          <form class="inquiry-form" id="inquiry-form" novalidate>
+            <input type="hidden" name="_subject" value="New Inquiry — 10 Thunder Road">
+            <input type="hidden" name="_captcha" value="false">
+            <input type="hidden" name="_template" value="table">
+            <input type="text" name="_honey" style="display:none" tabindex="-1" autocomplete="off">
+
+            <div class="form-row">
+              <div class="form-field">
+                <label for="first-name">First Name</label>
+                <input type="text" id="first-name" name="First Name" required autocomplete="given-name">
+              </div>
+              <div class="form-field">
+                <label for="last-name">Last Name</label>
+                <input type="text" id="last-name" name="Last Name" required autocomplete="family-name">
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="form-field">
+                <label for="email">Email Address</label>
+                <input type="email" id="email" name="Email" required autocomplete="email">
+              </div>
+              <div class="form-field">
+                <label for="phone">Phone Number</label>
+                <input type="tel" id="phone" name="Phone" autocomplete="tel">
+              </div>
+            </div>
+
+            <div class="form-field">
+              <label for="interest">I'm Interested In</label>
+              <select id="interest" name="Interest" required>
+                <option value="" disabled selected>Select one</option>
+                <option value="Private Showing">Private Showing</option>
+                <option value="STR Projections">STR Projections</option>
+                <option value="Both">Both — Showing &amp; STR Projections</option>
+                <option value="Other">Other Inquiry</option>
+              </select>
+            </div>
+
+            <div class="form-field">
+              <label for="message">Message</label>
+              <textarea id="message" name="Message" rows="4" placeholder="Tell us about your timeline or any questions…"></textarea>
+            </div>
+
+            <div class="form-submit-wrap">
+              <button type="submit" class="form-submit-btn" id="submit-btn">Send Inquiry</button>
+            </div>
+
+            <p class="form-mls">MLS# 7011163 · Canyon Mesa Country Club, Sedona AZ 86351</p>
+          </form>
+
+          <div class="form-success" id="form-success" aria-live="polite">
+            <h3>Thank You</h3>
+            <p>Your inquiry has been received. A member of the Posterity 44 team will be in touch within 24 hours.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       FOOTER
+  ============================================================ -->
+  <footer role="contentinfo">
+    <div class="content-wrap">
+      <div class="footer-inner">
+        <div class="footer-logo">
+          <img src="./assets/logo.png" alt="Posterity 44" width="100" height="21">
+        </div>
+
+        <div class="footer-agents">
+          <div class="footer-agent">
+            <div class="role">Listing Broker</div>
+            <div class="agent-name">Johnny Johnson</div>
+            <div class="agent-contact">
+              Posterity 44 LLC<br>
+              <a href="tel:9282022720">(928) 202-2720</a> &nbsp;·&nbsp; <a href="mailto:jack@posterity44.com">jack@posterity44.com</a>
+            </div>
+          </div>
+
+          <div class="footer-divider" aria-hidden="true"></div>
+
+          <div class="footer-agent">
+            <div class="role">Listing Agent</div>
+            <div class="agent-name">Jack Johnson</div>
+            <div class="agent-contact">
+              <a href="tel:9283009626">(928) 300-9626</a> &nbsp;·&nbsp; <a href="mailto:johnnysedona@gmail.com">johnnysedona@gmail.com</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="footer-address">
+          115 Kaibab Way, Sedona, AZ 86351
+        </div>
+
+        <div class="footer-eho" aria-label="Equal Housing Opportunity">
+          <svg width="20" height="20" viewBox="0 0 50 50" fill="var(--text-muted)" aria-hidden="true">
+            <path d="M25 2L2 20h6v28h14V32h6v16h14V20h6L25 2z"/>
+            <rect x="20" y="22" width="10" height="8" fill="var(--black)"/>
+          </svg>
+          <span>Equal Housing Opportunity</span>
+        </div>
+
+        <div class="footer-legal">
+          <p>&copy; 2026 Posterity 44 LLC. All rights reserved. &nbsp;|&nbsp; All information deemed reliable but not guaranteed. Buyer to verify all information independently. This is not an offer to sell where prohibited by law. MLS# 7011163.</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ============================================================
+       JAVASCRIPT
+  ============================================================ -->
+  <script>
+    // ---- All photo paths ----
+    var allPhotos = [];
+    for (var i = 0; i < 50; i++) {
+      var n = i < 10 ? '0' + i : '' + i;
+      allPhotos.push('./assets/gallery/photo_' + n + '.jpg');
+    }
+
+    // ---- Navigation scroll behavior ----
+    var nav = document.getElementById('nav');
+    window.addEventListener('scroll', function() {
+      if (window.scrollY > 60) {
+        nav.classList.add('scrolled');
+      } else {
+        nav.classList.remove('scrolled');
+      }
+    }, { passive: true });
+
+    // ---- Mobile hamburger ----
+    var hamburger = document.getElementById('hamburger');
+    var overlay = document.getElementById('nav-overlay');
+    var overlayLinks = overlay.querySelectorAll('a');
+
+    hamburger.addEventListener('click', function() {
+      var isOpen = hamburger.classList.toggle('open');
+      overlay.classList.toggle('open', isOpen);
+      hamburger.setAttribute('aria-expanded', isOpen);
+      document.body.style.overflow = isOpen ? 'hidden' : '';
+    });
+
+    overlayLinks.forEach(function(link) {
+      link.addEventListener('click', function() {
+        hamburger.classList.remove('open');
+        overlay.classList.remove('open');
+        hamburger.setAttribute('aria-expanded', 'false');
+        document.body.style.overflow = '';
+      });
+    });
+
+    // ---- Scroll reveal ----
+    var reveals = document.querySelectorAll('.reveal');
+    var revealObserver = new IntersectionObserver(function(entries) {
+      entries.forEach(function(entry) {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+          revealObserver.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.12 });
+    reveals.forEach(function(el) { revealObserver.observe(el); });
+
+    // ---- Lightbox ----
+    var lightbox = document.getElementById('lightbox');
+    var lightboxImg = document.getElementById('lightbox-img');
+    var lightboxCounter = document.getElementById('lightbox-counter');
+    var lightboxClose = document.getElementById('lightbox-close');
+    var lightboxPrev = document.getElementById('lightbox-prev');
+    var lightboxNext = document.getElementById('lightbox-next');
+    var currentIndex = 0;
+
+    function openLightbox(index) {
+      currentIndex = index;
+      showPhoto(currentIndex);
+      lightbox.classList.add('open');
+      document.body.style.overflow = 'hidden';
+      lightboxClose.focus();
+    }
+
+    function closeLightbox() {
+      lightbox.classList.remove('open');
+      document.body.style.overflow = '';
+    }
+
+    function showPhoto(index) {
+      lightboxImg.src = allPhotos[index];
+      lightboxImg.alt = 'Property photo ' + (index + 1) + ' of 50';
+      lightboxCounter.textContent = (index + 1) + ' / 50';
+    }
+
+    function prevPhoto() {
+      currentIndex = (currentIndex - 1 + allPhotos.length) % allPhotos.length;
+      showPhoto(currentIndex);
+    }
+
+    function nextPhoto() {
+      currentIndex = (currentIndex + 1) % allPhotos.length;
+      showPhoto(currentIndex);
+    }
+
+    // Gallery cell clicks
+    var galleryCells = document.querySelectorAll('.gallery-cell');
+    galleryCells.forEach(function(cell) {
+      cell.addEventListener('click', function() {
+        openLightbox(parseInt(cell.getAttribute('data-index'), 10));
+      });
+      cell.addEventListener('keydown', function(e) {
+        if (e.key === 'Enter' || e.key === ' ') {
+          e.preventDefault();
+          openLightbox(parseInt(cell.getAttribute('data-index'), 10));
+        }
+      });
+    });
+
+    // "View All" button opens at 0
+    document.getElementById('view-all-btn').addEventListener('click', function() {
+      openLightbox(0);
+    });
+
+    lightboxClose.addEventListener('click', closeLightbox);
+    lightboxPrev.addEventListener('click', prevPhoto);
+    lightboxNext.addEventListener('click', nextPhoto);
+
+    // Click backdrop to close
+    lightbox.addEventListener('click', function(e) {
+      if (e.target === lightbox) closeLightbox();
+    });
+
+    // Keyboard navigation
+    document.addEventListener('keydown', function(e) {
+      if (!lightbox.classList.contains('open')) return;
+      if (e.key === 'Escape') closeLightbox();
+      if (e.key === 'ArrowLeft') prevPhoto();
+      if (e.key === 'ArrowRight') nextPhoto();
+    });
+
+    // Touch/swipe for lightbox
+    var touchStartX = 0;
+    lightbox.addEventListener('touchstart', function(e) {
+      touchStartX = e.changedTouches[0].clientX;
+    }, { passive: true });
+    lightbox.addEventListener('touchend', function(e) {
+      var dx = e.changedTouches[0].clientX - touchStartX;
+      if (Math.abs(dx) > 40) {
+        if (dx < 0) nextPhoto(); else prevPhoto();
+      }
+    }, { passive: true });
+
+    // ---- Contact form (FormSubmit AJAX) ----
+    var form = document.getElementById('inquiry-form');
+    var submitBtn = document.getElementById('submit-btn');
+    var formSuccess = document.getElementById('form-success');
+
+    form.addEventListener('submit', function(e) {
+      e.preventDefault();
+
+      // Basic validation
+      var firstName = form.querySelector('[name="First Name"]').value.trim();
+      var email = form.querySelector('[name="Email"]').value.trim();
+      var interest = form.querySelector('[name="Interest"]').value;
+
+      if (!firstName || !email || !interest) {
+        // Highlight required fields
+        if (!firstName) form.querySelector('[name="First Name"]').focus();
+        else if (!email) form.querySelector('[name="Email"]').focus();
+        else if (!interest) form.querySelector('[name="Interest"]').focus();
+        return;
+      }
+
+      submitBtn.disabled = true;
+      submitBtn.textContent = 'Sending…';
+
+      var data = {};
+      new FormData(form).forEach(function(val, key) {
+        if (key !== '_honey' || val === '') {
+          data[key] = val;
+        }
+      });
+
+      fetch('https://formsubmit.co/ajax/jack@posterity44.com', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+          'Accept': 'application/json'
+        },
+        body: JSON.stringify(data)
+      })
+      .then(function(res) { return res.json(); })
+      .then(function(data) {
+        form.style.display = 'none';
+        formSuccess.classList.add('visible');
+      })
+      .catch(function() {
+        submitBtn.disabled = false;
+        submitBtn.textContent = 'Send Inquiry';
+        alert('There was an issue sending your message. Please try calling us directly.');
+      });
+    });
+
+    // ---- Smooth anchor scrolls with nav offset ----
+    document.querySelectorAll('a[href^="#"]').forEach(function(anchor) {
+      anchor.addEventListener('click', function(e) {
+        var target = document.querySelector(this.getAttribute('href'));
+        if (target) {
+          e.preventDefault();
+          var offset = parseInt(getComputedStyle(document.documentElement).getPropertyValue('--nav-h'), 10) || 72;
+          window.scrollTo({
+            top: target.getBoundingClientRect().top + window.scrollY - offset,
+            behavior: 'smooth'
+          });
+        }
+      });
+    });
+  </script>
+
+</body>
+</html>
